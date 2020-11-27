@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 html {
+    @apply overflow-x-hidden;
     font-size:16px;
 }
 
