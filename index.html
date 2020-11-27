@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-europa overflow-x-hidden">
+<body class="font-europa bg-light">
     <!-- HEADER -->
     <header>
         <div class="bg-dark px-4 md:px-6 py-2 flex justify-between items-center -mx-4">
@@ -65,7 +65,7 @@
 
             <div class="logo px-2">
                 <a href="#">
-                    <img src="/assets/images/logo@2x.png" alt="" class="h-12 md:h-16 lg:h-auto"/>
+                    <img src="/assets/images/logo.png" srcset="/assets/images/logo.png 1x, /assets/images/logo@2x.png 2x, /assets/images/logo@3x.png 3x" alt="AZ Modesty" class="h-12 md:h-16 lg:h-auto">
                 </a>
             </div>
 
@@ -121,16 +121,32 @@
         </div>
     </header>
 
+    <div class="banner bg-primary pt-12 relative">
+        <div class="container px-4 mx-auto flex flex-wrap items-center">
+            <div class="w-full md:w-1/2 text-white md:pb-0 pb-6 md:pr-8">
+                <h2 class="font-tenor leading-snug text-4xl md:text-5xl lg:text-3-5rem">Lorem ipsum dolor sit amet consectetur</h2>
+
+                <div class="actions mt-8">
+                    <a class="btn-1">Shop All</a>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2">
+                <img src="/assets/images/banner.png" srcset="/assets/images/banner.png 1x, /assets/images/banner@2x.png 2x, /assets/images/banner@3x.png 3x" alt=""  class="-mr-8 -mb-1" />
+            </div>
+        </div>
+    </div>
+
     <!-- BODY -->
     <div class="main-body">
-        <section class="py-8">
+        <section class="py-20">
             <div class="container px-4 mx-auto flex justify-between items-start">
                 <div class="w-1/4">
                     <h2 class="mb-4">Latest products</h2>
 
                     <h3 class="font-tenor text-4xl text-dark">Lorem ipsum dolor sit amet consectetur </h3>
 
-                    <a href="#" class="inline-block px-6 py-4 bg-secondary text-dark mt-8">Shop featured</a>
+                    <a href="#" class="btn-1 mt-8">Shop featured</a>
                 </div>
                 <div class="w-3/4">
                     <div class="flex -mx-3">
