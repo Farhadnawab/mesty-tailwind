@@ -4,5 +4,9 @@ $(document).ready(function(){
             $('#nav-icon').toggleClass('open');
             $('.main-menu').toggle();
         }
-	});
+    });
+    
+    $('#search-trigger').click(function(){
+        $('#search').toggleClass('active');
+    });
 });

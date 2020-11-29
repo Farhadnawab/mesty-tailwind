@@ -82,7 +82,13 @@ html {
 }
 
 
-.btn-1:hover {
+.btn-2 {
+    @apply inline-block cursor-pointer px-6 whitespace-nowrap py-4 bg-dark text-secondary hover:bg-secondary hover:text-dark relative -top-1 -left-1;
+    transition:all ease 0.3s;
+}
+
+
+.btn-1:hover, .btn-2:hover {
     @apply top-0 left-0;
 }
 
@@ -97,6 +103,15 @@ html {
 }
 
 
+.btn-2:after {
+    content:'';
+    @apply border border-dark absolute top-1 left-1 -bottom-1 -right-1;
+    transition:all ease 0.3s;
+}
+
+.btn-2:hover:after {
+    @apply inset-0 border-secondary
+}
 
 .banner:after {
     @apply bg-no-repeat absolute bg-left-bottom left-0 right-0 h-24;
@@ -221,3 +236,24 @@ html {
     top: 14px;
     left: 2px;
   }
+
+
+
+/* SEARCH RESPONSIVE */
+#search.active .search-box{
+    display:block;
+}
+
+@media (max-width:1024.5px){
+    #search.active .search-box {
+        top: 4rem;
+        left:1rem;
+        right:1rem;
+    }
+}
+
+
+/* DROPDOWN */
+.dropdown-menu:hover .dropdown {
+    display:block;
+}

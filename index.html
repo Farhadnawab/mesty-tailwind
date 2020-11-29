@@ -29,24 +29,35 @@
                 <li class="px-4 text-secondary hidden md:block"><a href="#" class="hover:text-white">Our Story</a></li>
                 <li class="px-4 text-secondary hidden md:block"><a href="#" class="hover:text-white">Become A Seller</a></li>
                 <li class="px-4 text-secondary hidden md:block"><a href="#" class="hover:text-white">Account</a></li>
-                <li class="px-4 text-secondary">
+                <li class="px-4 text-secondary relative dropdown-menu">
                     <a href="#" class="hover:text-white">English
                         <svg width="9px" height="5px" class="inline-block" viewbox="0 0 9 5" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.9 -1.66533e-17L3.45 3L4.26118e-15 -1.66533e-17" transform="translate(0.75 0.75)" id="Line-Copy-7" fill="none" fill-rule="evenodd" stroke="#FFDB8A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
+
+                    <ul class="dropdown hidden rounded bg-white top-6 w-32 right-0 absolute z-10 p-2">
+                        <li><a href="#" class="text-dark hover:text-primary text-sm p-2 inline-block w-full">English</a></li>
+                        <li><a href="#" class="text-dark hover:text-primary text-sm p-2 inline-block w-full">Arabic</a></li>
+                        <li><a href="#" class="text-dark hover:text-primary text-sm p-2 inline-block w-full">Dutch</a></li>
+                    </ul>
                 </li>
-                <li class="px-4 text-secondary">
+                <li class="px-4 text-secondary relative dropdown-menu">
                     <a href="#" class="hover:text-white">$ 
                         <svg width="9px" height="5px" class="inline-block" viewbox="0 0 9 5" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.9 -1.66533e-17L3.45 3L4.26118e-15 -1.66533e-17" transform="translate(0.75 0.75)" id="Line-Copy-7" fill="none" fill-rule="evenodd" stroke="#FFDB8A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
+
+                    <ul class="dropdown hidden rounded bg-white top-6 w-12 right-0 absolute z-10 p-2">
+                        <li><a href="#" class="text-dark hover:text-primary text-sm p-2 inline-block w-full">$</a></li>
+                        <li><a href="#" class="text-dark hover:text-primary text-sm p-2 inline-block w-full">£</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
-        <div class="bg-primary flex justify-between items-center py-3 px-4 md:px-6">
-            <div class="left flex items-center">
+        <div class="bg-primary flex justify-between items-center py-3 px-4 md:px-6 relative">
+            <div class="left flex items-center lg:w-2/5">
                 <div class="pr-2 md:pr-5">
                     <a href="Javascript:void(0)" id="menu-trigger">
                         <div id="nav-icon">
@@ -64,24 +75,24 @@
                 </ul>
             </div>
 
-            <div class="logo px-2">
+            <div class="logo px-2 lg:w-1/5 text-center">
                 <a href="#">
-                    <img src="/assets/images/logo.png" srcset="/assets/images/logo.png 1x, /assets/images/logo@2x.png 2x, /assets/images/logo@3x.png 3x" alt="AZ Modesty" class="h-12 md:h-16 lg:h-auto">
+                    <img src="/assets/images/logo.png" srcset="/assets/images/logo.png 1x, /assets/images/logo@2x.png 2x, /assets/images/logo@3x.png 3x" alt="AZ Modesty" class="h-12 md:h-16 lg:h-auto inline-block">
                 </a>
             </div>
 
-            <div class="right flex items-center flex-grow lg:flex-grow-0 justify-end">
-                <div class="search pr-2">
-                    <div class="block lg:hidden">
+            <div class="right lg:w-2/5 flex items-center flex-grow lg:flex-grow-0 justify-end">
+                <div class="search pr-2" id="search">
+                    <div class="block lg:hidden" id="search-trigger">
                         <svg width="21px" height="22px" viewbox="0 0 21 22" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Group-9" transform="translate(1 1)">
-                            <path d="M6.69565 13.3913C10.3936 13.3913 13.3913 10.3936 13.3913 6.69565C13.3913 2.99775 10.3936 0 6.69565 0C2.99775 0 0 2.99775 0 6.69565C0 10.3936 2.99775 13.3913 6.69565 13.3913Z" transform="matrix(1 0 0 1 -8.357759E-13 1.5099033E-14)" id="Oval" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8.26087 8.26087L0.826087 0.826087" transform="translate(10.086957 11.73913)" id="Line-7" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
+                            <g id="Group-9" transform="translate(1 1)">
+                                <path d="M6.69565 13.3913C10.3936 13.3913 13.3913 10.3936 13.3913 6.69565C13.3913 2.99775 10.3936 0 6.69565 0C2.99775 0 0 2.99775 0 6.69565C0 10.3936 2.99775 13.3913 6.69565 13.3913Z" transform="matrix(1 0 0 1 -8.357759E-13 1.5099033E-14)" id="Oval" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8.26087 8.26087L0.826087 0.826087" transform="translate(10.086957 11.73913)" id="Line-7" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
                         </svg>
                     </div>
-                    <div class="search-box relative hidden lg:block">
-                        <input type="text" class="h-10 bg-transparent outline-none text-white placeholder-white border-white border w-80 py-2 pl-3 pr-6" placeholder="Search for items, brands and inspiration">
+                    <div class="search-box hidden lg:block absolute bg-white p-2 lg:p-0 lg:bg-transparent lg:relative">
+                        <input type="text" class="h-10 bg-transparent outline-none text-dark lg:text-white lg:placeholder-white border-secondary lg:border-white border w-96 max-w-full py-2 pl-3 pr-6" placeholder="Search for items, brands and inspiration">
                         <button type="button" class="absolute top-3 right-4">
                             <svg width="13px" height="14px" viewbox="0 0 13 14" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                             <g id="Group-27" transform="translate(0.5 0.5)">
@@ -336,12 +347,12 @@
                     </div>
                 </div>
 
-                <div class="w-full lg:w-1/4 lg:pl-8 order-first">
+                <div class="w-full lg:w-1/4 lg:pl-8 order-first lg:order-none">
                     <h2 class="mb-4 md:mb-6 lg:mb-12 text-dark text-base heading-border">Editors Pick</h2>
 
                     <h3 class="font-tenor text-3xl lg:text-2-5rem text-dark leading-10">Lorem ipsum dolor sit amet consectetur </h3>
 
-                    <a href="#" class="btn-1 mt-8">Shop our picks</a>
+                    <a href="#" class="btn-2 mt-8">Shop our picks</a>
                 </div>
         </section>
 
