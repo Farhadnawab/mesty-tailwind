@@ -23,6 +23,19 @@ module.exports = {
         '2-75rem': '2.75rem',
         '3-5rem': '3.5rem',
         '4rem': '4rem'
+      },
+      spacing: {
+        '9-25rem': '9.25rem',
+        '22rem': '22rem',
+        '30rem': '30rem',
+        '35rem': '35rem',
+        '40rem': '40rem'
+      },
+      backgroundSize: {
+       '50': '50%',
+       '100': '100%',
+       'h100': 'auto 100%',
+       'h100px': 'auto 100px'
       }
     },
   },
